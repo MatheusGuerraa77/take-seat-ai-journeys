@@ -25,6 +25,14 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				// TakeSeat brand colors
+				brand: {
+					primary: '#5ce1e6', // Cyan vibrante
+					secondary: '#050a30', // Azul escuro
+					accent: '#4ade80', // Verde complementar
+					light: '#f0fffe',
+					dark: '#0a0f2e',
+				},
 				sky: {
 					50: '#f0f9ff',
 					100: '#e0f2fe',
@@ -32,10 +40,10 @@ export default {
 					300: '#7dd3fc',
 					400: '#38bdf8',
 					500: '#0ea5e9',
-					600: '#1E88E5', // Primary TakeSeat blue
+					600: '#5ce1e6', // Primary TakeSeat cyan
 					700: '#0369a1',
 					800: '#075985',
-					900: '#0c4a6e',
+					900: '#050a30', // Secondary TakeSeat dark blue
 				},
 				green: {
 					50: '#f0fdf4',
@@ -43,7 +51,7 @@ export default {
 					200: '#bbf7d0',
 					300: '#86efac',
 					400: '#4ade80',
-					500: '#43A047', // Secondary TakeSeat green
+					500: '#43A047',
 					600: '#16a34a',
 					700: '#15803d',
 					800: '#166534',
@@ -55,7 +63,7 @@ export default {
 					200: '#fed7aa',
 					300: '#fdba74',
 					400: '#fb923c',
-					500: '#FF9800', // Accent TakeSeat orange
+					500: '#FF9800',
 					600: '#ea580c',
 					700: '#c2410c',
 					800: '#9a3412',
@@ -67,7 +75,7 @@ export default {
 					200: '#e5e7eb',
 					300: '#d1d5db',
 					400: '#9ca3af',
-					500: '#616161', // Neutral TakeSeat gray
+					500: '#616161',
 					600: '#4b5563',
 					700: '#374151',
 					800: '#1f2937',
@@ -133,11 +141,31 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-right': {
+					'0%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-in-right': 'slide-in-right 0.5s ease-out'
 			}
 		}
 	},
