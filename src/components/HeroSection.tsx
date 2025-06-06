@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -20,7 +19,6 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            IA personalizada que adapta cada viagem às suas necessidades específicas. 
             Com soluções acessíveis que transformam a experiência de voar.
           </p>
           
