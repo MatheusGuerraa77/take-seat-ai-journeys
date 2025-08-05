@@ -8,6 +8,9 @@ import Index from "./pages/Index";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import Dashboard from "./pages/dashboard";
+import Passengers from "./pages/passengers";
+import Reports from "./pages/reports";
+import SelfService from "./pages/self-service";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +26,9 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/passengers" element={<Passengers />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/self-service" element={<SelfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
